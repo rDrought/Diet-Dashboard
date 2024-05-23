@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#logo {
+    height: 50px;
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-buttons {
+    flex-grow: 1;
+}
+
+.sidebar-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+    background: #666;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.sidebar-buttons button:hover {
+    background: #555;
+}
+
+#logout-button {
+    background: #ff4444;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background: #cc0000;
+}
+
+main {
+    margin: 80px 20px 40px 220px;
+    padding: 20px;
+    flex: 1;
+    width: calc(100% - 240px);
+}
+
+table.display {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table.display th, table.display td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.display th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table.display tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: transparent;
+    padding: 5px;
+    font-size: 14px;
+    color: #666;
+}
